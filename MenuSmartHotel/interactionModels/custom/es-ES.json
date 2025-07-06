@@ -1,0 +1,85 @@
+{
+  "interactionModel": {
+    "languageModel": {
+      "intents": [
+        {
+          "name": "AMAZON.CancelIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.HelpIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.StopIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.NavigateHomeIntent",
+          "samples": []
+        },
+        {
+          "slots": [
+            {
+              "name": "dia",
+              "type": "DAY"
+            }
+          ],
+          "name": "MenuIntent",
+          "samples": [
+            "comidas {dia}",
+            "menu establecido para el {dia}",
+            "cual es el menu para el {dia}",
+            "lista de comidas {dia}",
+            "comida del {dia}",
+            "menu para el {dia}",
+            "que menu hay para el {dia}"
+          ]
+        }
+      ],
+      "types": [
+        {
+          "values": [
+            {
+              "name": {
+                "value": "domingo"
+              }
+            },
+            {
+              "name": {
+                "value": "sabado"
+              }
+            },
+            {
+              "name": {
+                "value": "viernes"
+              }
+            },
+            {
+              "name": {
+                "value": "jueves"
+              }
+            },
+            {
+              "name": {
+                "value": "miercoles"
+              }
+            },
+            {
+              "name": {
+                "value": "martes"
+              }
+            },
+            {
+              "name": {
+                "value": "lunes"
+              }
+            }
+          ],
+          "name": "DAY"
+        }
+      ],
+      "invocationName": "menu previsto"
+    }
+  }
+}
